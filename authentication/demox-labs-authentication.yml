@@ -1,0 +1,18 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.leo.app/aleo-rpc-api
+summary:
+  types: [none]
+  api_key_in: []
+  oauth2_flows: []
+  note: >-
+    The public Aleo RPC API is free and requires no authentication — no API key,
+    token, or OAuth flow. The documentation notes that rate limiting may be
+    introduced to prevent spamming. Access is open over HTTPS against the
+    per-network JSON-RPC base URLs.
+schemes:
+- name: public
+  type: none
+  description: No authentication required; open JSON-RPC 2.0 endpoint, subject to
+    rate limiting.
+  sources: [https://docs.leo.app/aleo-rpc-api]
