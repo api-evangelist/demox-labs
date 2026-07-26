@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.leo.app/aleo-rpc-api
+api: Aleo RPC API
+versioning:
+  scheme: per-network-base-url
+  networks:
+  - name: testnet-beta
+    baseURL: https://testnetbeta.aleorpc.com
+    status: current
+  - name: testnet3
+    baseURL: https://testnet3.aleorpc.com
+    status: legacy
+  docs: https://docs.leo.app/aleo-rpc-api
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No formal deprecation policy or RFC 8594 Sunset/Deprecation header support
+    is documented.
+sla:
+  url: null
+  note: No published SLA. API is free with best-effort availability and possible
+    rate limiting.
+status_page: null
+product_notes:
+- >-
+  Leo Wallet is transitioning to Shield, a next-generation Aleo privacy wallet
+  built by Provable; users migrate with their seed phrase.

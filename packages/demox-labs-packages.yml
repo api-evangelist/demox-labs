@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/demox-labs
+packages:
+- language: javascript
+  registry: npm
+  name: "@demox-labs/aleo-sdk"
+  url: https://www.npmjs.com/package/@demox-labs/aleo-sdk
+  install: npm install @demox-labs/aleo-sdk
+  version: 1.0.0
+  description: WebAssembly build of the Aleo SDK — create accounts, craft and sign
+    transactions, and broadcast them to the Aleo network.
+  repository: https://github.com/demox-labs/aleo
+  official: true
+- language: javascript
+  registry: npm
+  name: "@demox-labs/miden-sdk"
+  url: https://www.npmjs.com/package/@demox-labs/miden-sdk
+  install: npm install @demox-labs/miden-sdk
+  version: 0.12.5
+  description: Miden WebAssembly SDK for building on the Polygon Miden rollup.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@demox-labs/aleo-hd-key"
+  url: https://www.npmjs.com/package/@demox-labs/aleo-hd-key
+  install: npm install @demox-labs/aleo-hd-key
+  description: BIP-0032-like hierarchical deterministic key derivation for Aleo.
+  official: true

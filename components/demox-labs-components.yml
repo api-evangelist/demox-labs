@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.leo.app/aleo-wallet-adapter
+description: >-
+  Client-side, embeddable wallet-connection components and adapters that let a
+  dApp connect to Aleo- and Miden-compatible wallets. Distinct from the
+  server/build SDKs in packages/ — these are TypeScript adapters plus prebuilt
+  React UI surfaces (connect button, wallet modal) mounted in the browser.
+families:
+- family: Aleo Wallet Adapter
+  docs: https://docs.leo.app/aleo-wallet-adapter
+  components:
+  - name: "@demox-labs/aleo-wallet-adapter-base"
+    url: https://www.npmjs.com/package/@demox-labs/aleo-wallet-adapter-base
+    role: Core infrastructure for connecting Aleo-compatible wallets to a dApp.
+  - name: "@demox-labs/aleo-wallet-adapter-react"
+    url: https://www.npmjs.com/package/@demox-labs/aleo-wallet-adapter-react
+    role: React context/hooks infrastructure for wallet connection.
+  - name: "@demox-labs/aleo-wallet-adapter-reactui"
+    url: https://www.npmjs.com/package/@demox-labs/aleo-wallet-adapter-reactui
+    role: Prebuilt React UI components (WalletMultiButton, WalletModal, connect/disconnect
+      buttons).
+  - name: "@demox-labs/aleo-wallet-adapter-leo"
+    url: https://www.npmjs.com/package/@demox-labs/aleo-wallet-adapter-leo
+    role: Leo Wallet adapter implementation.
+- family: Miden Wallet Adapter
+  docs: https://github.com/demox-labs/miden-wallet-adapter
+  components:
+  - name: "@demox-labs/miden-wallet-adapter"
+    url: https://www.npmjs.com/package/@demox-labs/miden-wallet-adapter
+    role: Modular TypeScript wallet adapters and React components for Miden applications.
+  - name: "@demox-labs/miden-wallet-adapter-base"
+    url: https://www.npmjs.com/package/@demox-labs/miden-wallet-adapter-base
+    role: Core infrastructure for connecting Miden-compatible wallets to a dApp.
+  - name: "@demox-labs/miden-wallet-adapter-miden"
+    url: https://www.npmjs.com/package/@demox-labs/miden-wallet-adapter-miden
+    role: Miden wallet adapter for the Miden Wallet.

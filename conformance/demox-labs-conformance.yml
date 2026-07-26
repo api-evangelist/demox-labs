@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: derived
+source: https://docs.leo.app/aleo-rpc-api
+api: Aleo RPC API
+standards:
+- id: json-rpc-2.0
+  conforms: true
+  evidence: Documentation states the API follows the JSON-RPC 2.0 specification.
+- id: oauth2
+  conforms: false
+  evidence: No authentication; open public endpoint.
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors returned as JSON-RPC error objects, not application/problem+json.
+- id: json-api
+  conforms: false
+- id: fhir
+  conforms: false
+- id: fapi
+  conforms: false
+- id: scim
+  conforms: false
+- id: odata
+  conforms: false

@@ -1,7 +1,32 @@
 aid: demox-labs
 name: Demox Labs
-description: Demox Labs is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Demox Labs is a San Francisco company building privacy infrastructure for
+  zero-knowledge (ZK) blockchains, starting with the Aleo network. It is the
+  maker of Leo Wallet, a privacy-focused, zero-knowledge cryptocurrency wallet
+  that constructs transactions locally on the user's device and lets holders
+  conceal or disclose any component of a transaction before it is verified on
+  chain. Demox ships developer tooling for the Aleo and Polygon Miden ecosystems:
+  the Aleo SDK and Miden SDK (WebAssembly builds), the Aleo and Miden wallet
+  adapters (modular TypeScript adapters and React components for connecting
+  dApps to compatible wallets), and the public Aleo RPC API, a free JSON-RPC 2.0
+  endpoint for reading blocks, transactions, transitions, records, programs,
+  mappings, NFTs, and staking data from the Aleo network. Leo Wallet is
+  transitioning to Shield, a next-generation Aleo privacy wallet built by
+  Provable.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://raw.githubusercontent.com/api-evangelist/demox-labs/refs/heads/main/apis.yml
 url: https://raw.githubusercontent.com/api-evangelist/demox-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +36,96 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Blockchain
+- Zero Knowledge
+- Cryptocurrency
+- Wallet
+- Privacy
+- Web3
+- Developer Tools
+- SDK
+- JSON-RPC
+apis:
+- name: Aleo RPC API
+  description: >-
+    Free public JSON-RPC 2.0 API for reading the Aleo zero-knowledge blockchain —
+    latest blocks and heights, transactions and transitions, records, deployed
+    programs, mapping values, public NFTs and token programs, staking balances,
+    and chain status. Also supports generating unsigned transactions and program
+    deployments. No authentication; rate limiting may be applied to prevent abuse.
+  humanURL: https://docs.leo.app/aleo-rpc-api
+  baseURL: https://testnetbeta.aleorpc.com
+  tags:
+  - Blockchain
+  - JSON-RPC
+  - Aleo
+  - Zero Knowledge
+  properties:
+  - type: Documentation
+    url: https://docs.leo.app/aleo-rpc-api
+  - type: APIReference
+    url: https://docs.leo.app/aleo-rpc-api/endpoints
+  - type: Authentication
+    url: authentication/demox-labs-authentication.yml
+  - type: Conventions
+    url: conventions/demox-labs-conventions.yml
+  - type: Conformance
+    url: conformance/demox-labs-conformance.yml
+  - type: Lifecycle
+    url: lifecycle/demox-labs-lifecycle.yml
+  - type: MCPServer
+    url: mcp/demox-labs-mcp.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/demox-labs-domain-security.yml
+- type: DeveloperPortal
+  url: https://docs.leo.app
+- type: Documentation
+  url: https://docs.leo.app
+- type: GettingStarted
+  url: https://docs.leo.app
+- type: APIReference
+  url: https://docs.leo.app/aleo-rpc-api/endpoints
+- type: Blog
+  url: https://leo.app/blog
+- type: Support
+  url: https://help.leo.app
+- type: GitHubOrganization
+  url: https://github.com/demox-labs
+- type: PrivacyPolicy
+  url: https://leo.app/privacy
+- type: TermsOfService
+  url: https://leo.app/terms
+- type: SignUp
+  url: https://leo.app/download
+- type: Packages
+  url: packages/demox-labs-packages.yml
+- type: SDKs
+  url: packages/demox-labs-packages.yml
+- type: Components
+  url: components/demox-labs-components.yml
+- type: Authentication
+  url: authentication/demox-labs-authentication.yml
+- type: Conventions
+  url: conventions/demox-labs-conventions.yml
+- type: Conformance
+  url: conformance/demox-labs-conformance.yml
+- type: Lifecycle
+  url: lifecycle/demox-labs-lifecycle.yml
+- type: MCPServer
+  url: mcp/demox-labs-mcp.yml
+- type: LLMsTxt
+  url: llms/demox-labs-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,45 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.leo.app/aleo-rpc-api
+api: Aleo RPC API
+protocol:
+  style: JSON-RPC 2.0
+  spec: https://www.jsonrpc.org/specification
+  transport: HTTPS POST
+  content_type: application/json
+  batch: true
+  note: >-
+    All calls are JSON-RPC 2.0 requests (method + params, id) POSTed to the
+    network base URL. Responses follow JSON-RPC 2.0 result/error envelopes.
+authentication:
+  style: none
+  detail: Free public endpoint; no API key or token. See authentication/demox-labs-authentication.yml
+idempotency:
+  supported: false
+  detail: >-
+    No idempotency-key mechanism is documented. Read methods are naturally safe
+    to retry; transaction/deployment generation methods return generated payloads
+    the caller then submits.
+pagination:
+  style: parameterized
+  detail: >-
+    Range/list methods (e.g. blocks, transactions, getPublicTransactionsForAddress)
+    accept start/end or page-style params rather than a cursor envelope; see the
+    per-endpoint reference.
+versioning:
+  style: per-network base URL
+  detail: >-
+    Network is selected by base URL rather than a version header — testnet3
+    (legacy) at testnet3.aleorpc.com and testnet beta at testnetbeta.aleorpc.com.
+  see: lifecycle/demox-labs-lifecycle.yml
+error_envelope:
+  style: json-rpc-error
+  detail: >-
+    Errors are returned as the JSON-RPC 2.0 error object (code, message, optional
+    data) on the response, not as HTTP problem+json.
+rate_limiting:
+  documented: true
+  detail: >-
+    "This API is free to use but rate limiting may be introduced to prevent
+    spamming at any point." No published quota values or rate-limit response
+    headers.
