@@ -2,54 +2,110 @@ generated: '2026-07-18'
 method: derived
 status: candidate
 source: https://docs.leo.app/aleo-rpc-api
-note: >-
-  No official hosted/remote MCP server was found for Demox Labs / the Aleo RPC
-  API. This is a candidate tool list derived one-to-one from the documented
-  JSON-RPC 2.0 methods, for a would-be MCP wrapper over the read surface. Each
-  tool maps to a JSON-RPC method against a per-network base URL
-  (https://testnetbeta.aleorpc.com).
+note: No official hosted/remote MCP server was found for Demox Labs / the Aleo RPC API. This is a candidate
+  tool list derived one-to-one from the documented JSON-RPC 2.0 methods, for a would-be MCP wrapper over
+  the read surface. Each tool maps to a JSON-RPC method against a per-network base URL (https://testnetbeta.aleorpc.com).
 server:
   name: aleo-rpc
   transport: http
   url: null
 tools:
-- {name: latest_height, description: Get the latest block height, source_method: latest/height}
-- {name: latest_hash, description: Get the latest block hash, source_method: latest/hash}
-- {name: latest_block, description: Get the latest block, source_method: latest/block}
-- {name: get_state_root, description: Get the current state root, source_method: getStateRoot}
-- {name: get_block, description: Get a block by height or hash, source_method: block}
-- {name: get_blocks, description: Get a range of blocks, source_method: blocks}
-- {name: get_aleo_blocks, description: Get Aleo blocks, source_method: getAleoBlocks}
-- {name: get_transaction, description: Get a transaction, source_method: transaction}
-- {name: get_aleo_transaction, description: Get an Aleo transaction, source_method: aleoTransaction}
-- {name: get_transactions, description: Get transactions, source_method: transactions}
-- {name: get_public_transactions_for_address, description: List public transactions
-    for an address, source_method: getPublicTransactionsForAddress}
-- {name: generate_transaction, description: Generate an unsigned transaction, source_method: generateTransaction}
-- {name: get_generated_transaction, description: Retrieve a previously generated transaction,
-    source_method: getGeneratedTransaction}
-- {name: get_transaction_id, description: Get the transaction id for a transition,
-    source_method: getTransactionId}
-- {name: transitions_without_record_inputs, description: Get transitions without record
-    inputs, source_method: transitionsWithoutRecordInputs}
-- {name: get_all_records, description: Get all records, source_method: records/all}
-- {name: records_is_owner, description: Check record ownership, source_method: records/isOwner}
-- {name: records_by_transition_and_index, description: Get records by transition and
-    index, source_method: records/byTransitionAndIndex}
-- {name: get_serial_numbers, description: Get serial numbers, source_method: serialNumbers}
-- {name: get_state_path, description: Get a state path, source_method: getStatePath}
-- {name: get_program, description: Get a deployed program, source_method: program}
-- {name: get_program_types, description: Get program types, source_method: getProgramTypes}
-- {name: transactions_for_program, description: List transactions for a program, source_method: transactionsForProgram}
-- {name: transactions_for_program_count, description: Count transactions for a program,
-    source_method: transactionsForProgramCount}
-- {name: generate_deployment, description: Generate a program deployment, source_method: generateDeployment}
-- {name: get_generated_deployment, description: Retrieve a generated deployment, source_method: getGeneratedDeployment}
-- {name: get_mapping_value, description: Get a mapping value, source_method: getMappingValue}
-- {name: get_public_nfts_for_address, description: List public NFTs for an address,
-    source_method: getPublicNFTsForAddress}
-- {name: get_public_token_programs_for_address, description: List public token programs
-    for an address, source_method: getPublicTokenProgramsForAddress}
-- {name: get_staked_balance_for_address, description: Get staked balance for an address,
-    source_method: getStakedBalanceForAddress}
-- {name: chain_status, description: Get chain status, source_method: chainStatus}
+- name: latest_height
+  description: Get the latest block height
+  source_method: latest/height
+- name: latest_hash
+  description: Get the latest block hash
+  source_method: latest/hash
+- name: latest_block
+  description: Get the latest block
+  source_method: latest/block
+- name: get_state_root
+  description: Get the current state root
+  source_method: getStateRoot
+- name: get_block
+  description: Get a block by height or hash
+  source_method: block
+- name: get_blocks
+  description: Get a range of blocks
+  source_method: blocks
+- name: get_aleo_blocks
+  description: Get Aleo blocks
+  source_method: getAleoBlocks
+- name: get_transaction
+  description: Get a transaction
+  source_method: transaction
+- name: get_aleo_transaction
+  description: Get an Aleo transaction
+  source_method: aleoTransaction
+- name: get_transactions
+  description: Get transactions
+  source_method: transactions
+- name: get_public_transactions_for_address
+  description: List public transactions for an address
+  source_method: getPublicTransactionsForAddress
+- name: generate_transaction
+  description: Generate an unsigned transaction
+  source_method: generateTransaction
+- name: get_generated_transaction
+  description: Retrieve a previously generated transaction
+  source_method: getGeneratedTransaction
+- name: get_transaction_id
+  description: Get the transaction id for a transition
+  source_method: getTransactionId
+- name: transitions_without_record_inputs
+  description: Get transitions without record inputs
+  source_method: transitionsWithoutRecordInputs
+- name: get_all_records
+  description: Get all records
+  source_method: records/all
+- name: records_is_owner
+  description: Check record ownership
+  source_method: records/isOwner
+- name: records_by_transition_and_index
+  description: Get records by transition and index
+  source_method: records/byTransitionAndIndex
+- name: get_serial_numbers
+  description: Get serial numbers
+  source_method: serialNumbers
+- name: get_state_path
+  description: Get a state path
+  source_method: getStatePath
+- name: get_program
+  description: Get a deployed program
+  source_method: program
+- name: get_program_types
+  description: Get program types
+  source_method: getProgramTypes
+- name: transactions_for_program
+  description: List transactions for a program
+  source_method: transactionsForProgram
+- name: transactions_for_program_count
+  description: Count transactions for a program
+  source_method: transactionsForProgramCount
+- name: generate_deployment
+  description: Generate a program deployment
+  source_method: generateDeployment
+- name: get_generated_deployment
+  description: Retrieve a generated deployment
+  source_method: getGeneratedDeployment
+- name: get_mapping_value
+  description: Get a mapping value
+  source_method: getMappingValue
+- name: get_public_nfts_for_address
+  description: List public NFTs for an address
+  source_method: getPublicNFTsForAddress
+- name: get_public_token_programs_for_address
+  description: List public token programs for an address
+  source_method: getPublicTokenProgramsForAddress
+- name: get_staked_balance_for_address
+  description: Get staked balance for an address
+  source_method: getStakedBalanceForAddress
+- name: chain_status
+  description: Get chain status
+  source_method: chainStatus
+deployment:
+  mode: none
+  verified: derived
+  tools: 31
+  checked: '2026-08-12'
+  source: catalog MCP census
